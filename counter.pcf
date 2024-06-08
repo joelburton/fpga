@@ -1,0 +1,8 @@
+# see https://www.nandland.com/goboard/Go_Board_Constraints.pcf
+
+set_io clkin  15
+
+set_io led[0] 56
+set_io led[1] 57
+set_io led[2] 59
+set_io led[3] 60 
