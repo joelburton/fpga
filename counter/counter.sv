@@ -1,6 +1,6 @@
 `default_nettype none
 
-module prescaler(input logic in_clk, output logic out_clk);
+module prescaler(input in_clk, output out_clk);
     // 1 @ 25 Mhz
     parameter counter_max = 25000000;
     // = math.ceil(math.log2( counter_max ))
@@ -24,8 +24,8 @@ module prescaler(input logic in_clk, output logic out_clk);
 endmodule // prescaler
 
 module top(
-    input logic clkin, // input clock: 25 Mhz
-    output logic [0:3] led,
+    input clkin, // input clock: 25 Mhz
+    output  [0:3] led,
     );
 
 logic clk1hz;
